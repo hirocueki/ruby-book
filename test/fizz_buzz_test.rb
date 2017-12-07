@@ -1,5 +1,6 @@
 
 require 'minitest/autorun'
+require './lib/fizz_buzz'
 
 class FizzBuzzTest < Minitest::Test
     def test_fizz_buzz
@@ -10,6 +11,5 @@ class FizzBuzzTest < Minitest::Test
         assert_equal 'Buzz', fizz_buzz(5)
         assert_equal 'Fizz', fizz_buzz(6)
         assert_equal 'Fizz Buzz', fizz_buzz(15)
-        assert_equal 'Fizz Buzz', fizz_buzz(16)
     end
 end
